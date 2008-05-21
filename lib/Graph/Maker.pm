@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw/Class::Factory/;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #Graph::Maker->add_factory_type('balanced_tree' => 'Graph::Maker::BalancedTree');
 #Graph::Maker->add_factory_type('barbell' => 'Graph::Maker::Barbell' );
@@ -43,9 +43,7 @@ Graph::Maker - Create many types of graphs
 
 =head1 VERSION
 
-Version 0.01
-
-=cut
+Version 0.02
 
 =head1 SYNOPSIS
 

@@ -7,7 +7,7 @@ use Exporter 'import'; # gives you Exporter's import() method directly
 our @EXPORT_OK = qw(cartesian_product is_valid_degree_seq);  # symbols to export on request
 our %EXPORT_TAGS = (all => [@EXPORT_OK]);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub cartesian_product
 {
@@ -67,15 +67,11 @@ __DATA__
 
 =head1 NAME
 
-Graph::Utils - Small routines that Graph::Maker::* uses.
+Graph::Maker::Utils - Small routines that Graph::Maker::* uses.
 
 =head1 VERSION
 
-Version 0.01
-
-=cut
-
-our $VERSION = '0.01';
+Version 0.02
 
 =head1 SYNOPSIS
 

@@ -24,14 +24,14 @@ sub init
 
 	my $g = $gm->(%params);
 
-    my @combinations = map { Set::Scalar->new(@$_) } combinations([1..$n], $k);
-    $g->add_vertices(1..$#combinations+1);
+	my @combinations = map { Set::Scalar->new(@$_) } combinations([1..$n], $k);
+	$g->add_vertices(1..$#combinations+1);
 
-    for my $i (0..$#combinations) {
-        for my $j (0..$#combinations) {
-            $g->add_edge($i+1, $j+1) if $combinations[$i] != $combinations[$j];
-        }
-    }
+	for my $i (0..$#combinations) {
+		for my $j (0..$#combinations) {
+			$g->add_edge($i+1, $j+1) if $combinations[$i] != $combinations[$j];
+		}
+	}
 
 	return $g;
 }

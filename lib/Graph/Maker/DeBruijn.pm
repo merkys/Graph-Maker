@@ -2,13 +2,11 @@ package Graph::Maker::DeBruijn;
 
 use strict;
 use warnings;
-use Algorithm::Combinatorics qw(combinations);
 use Carp qw/croak/;
 use base qw/Graph::Maker/;
 use Graph;
 use Graph::Maker::Complete;
 use Graph::MoreUtils qw/line/;
-use Set::Scalar;
 
 our $VERSION = '0.01';
 

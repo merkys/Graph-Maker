@@ -13,6 +13,7 @@ WriteMakefile(
 	'Graph' => 0.8,
 	'Math::Random' => 0,
 	'Class::Factory' => 0,
+	'Graph::MoreUtils' => '0.3.0',
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Graph-Maker-*' },

@@ -21,8 +21,11 @@ sub init
 	$gm ||= sub { new Graph(@_); };
 
 	my $g = Graph::Maker->new('complete', N => $m, graph_maker => $gm, %params);
-	for (1..$n) {
-		$g = line( $g );
+	for ($g->vertices) {
+		$g->add_edge($_, $_);
+	}
+	for (2..$n) {
+		$g = line($g);
 	}
 
 	return $g;
